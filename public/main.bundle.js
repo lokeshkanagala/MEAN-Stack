@@ -61,7 +61,7 @@ var NewsService = (function () {
     return NewsService;
     var _a;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/news.service.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/news.service.js.map
 
 /***/ }),
 
@@ -102,7 +102,7 @@ var ValidateService = (function () {
     ], ValidateService);
     return ValidateService;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/validate.service.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/validate.service.js.map
 
 /***/ }),
 
@@ -137,7 +137,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/main.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/main.js.map
 
 /***/ }),
 
@@ -171,7 +171,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/app.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/app.component.js.map
 
 /***/ }),
 
@@ -300,7 +300,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/app.module.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/app.module.js.map
 
 /***/ }),
 
@@ -365,7 +365,7 @@ var ChatComponent = (function () {
     ], ChatComponent);
     return ChatComponent;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/chat.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/chat.component.js.map
 
 /***/ }),
 
@@ -417,7 +417,7 @@ var DashboardComponent = (function () {
     return DashboardComponent;
     var _a;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/dashboard.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/dashboard.component.js.map
 
 /***/ }),
 
@@ -456,7 +456,7 @@ var HomeComponent = (function () {
     return HomeComponent;
     var _a;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/home.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/home.component.js.map
 
 /***/ }),
 
@@ -521,7 +521,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/login.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/login.component.js.map
 
 /***/ }),
 
@@ -574,7 +574,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/navbar.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/navbar.component.js.map
 
 /***/ }),
 
@@ -629,7 +629,7 @@ var NewsfeedComponent = (function () {
     return NewsfeedComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/newsfeed.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/newsfeed.component.js.map
 
 /***/ }),
 
@@ -679,7 +679,7 @@ var ProfileComponent = (function () {
     return ProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/profile.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/profile.component.js.map
 
 /***/ }),
 
@@ -760,7 +760,7 @@ var RegisterComponent = (function () {
     return RegisterComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/register.component.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/register.component.js.map
 
 /***/ }),
 
@@ -805,7 +805,7 @@ var AuthGuard = (function () {
     return AuthGuard;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/auth.guard.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/auth.guard.js.map
 
 /***/ }),
 
@@ -821,7 +821,7 @@ var AuthGuard = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/environment.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/environment.js.map
 
 /***/ }),
 
@@ -904,7 +904,7 @@ var AuthService = (function () {
     return AuthService;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/sumeesh/GitHub/MEAN-Stack/angular-src/src/auth.service.js.map
+//# sourceMappingURL=/Users/sumeesh/GitHub/nodejsprojects/MEAN-Stack/angular-src/src/auth.service.js.map
 
 /***/ }),
 
@@ -988,7 +988,7 @@ module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div cla
 /***/ 846:
 /***/ (function(module, exports) {
 
-module.exports = "<h1 class=\"page-header\" style=\"text-align: center; font-size: 50px;\"><strong>Dashboard</strong></h1>\n<h4 style=\"text-align: center;\">Select the 📰  Channel to Proceed ⏩</h4>\n<hr/>\n  <div class=\"row\">\n    <div class=\"col-md-3\">\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('business')\">Business</a>\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('entertainment')\">Entertainment</a>\n    </div>\n    <div class=\"col-md-3\">\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('gaming')\">Gaming</a>\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('general')\">General</a>\n    </div>\n    <div class=\"col-md-3\">\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('music')\">Music</a>\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('sport')\">Sport</a>\n    </div>\n    <div class=\"col-md-3\">\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('technology')\">Technology</a>\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('science-and-nature')\">Science</a>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"news-channel\">\n      <div class=\"row\">\n          <div *ngIf = \"newsJson\">\n            <div *ngFor = \"let channel of newsJson.sources\">\n              <div class=\"col-md-3\">\n                <div class=\"well channel\"> \n                  <img class=\"channel-thumb img-thumbnail btn\" src=\"{{channel.urlsToLogos.small}}\" [routerLink] = \"['/newsfeed', channel.id]\"/>\n                </div>\n              </div>\n            </div>\n          </div>\n      </div>\n  </div>\n  <br/>\n  <br/>"
+module.exports = "<h1 class=\"page-header\" style=\"text-align: center; font-size: 50px;\"><strong>Dashboard</strong></h1>\n<h4 style=\"text-align: center;\">Select the 📰  Channel to Proceed ⏩</h4>\n<hr/>\n  <div class=\"row\">\n    <div class=\"col-md-3\">\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('business')\">Business</a>\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('entertainment')\">Entertainment</a>\n    </div>\n    <div class=\"col-md-3\">\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('gaming')\">Gaming</a>\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('general')\">General</a>\n    </div>\n    <div class=\"col-md-3\">\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('music')\">Music</a>\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('sport')\">Sport</a>\n    </div>\n    <div class=\"col-md-3\">\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('technology')\">Technology</a>\n      <a class=\"btn btn-danger btn-block\" (click)=\"loadNews('science-and-nature')\">Science</a>\n    </div>\n  </div>\n  <hr/>\n  <div class=\"news-channel\">\n      <div class=\"row\">\n          <div *ngIf = \"newsJson\">\n            <div *ngFor = \"let channel of newsJson.sources\">\n              <div class=\"col-md-3\">\n                <div class=\"well channel\"> \n                  <h1 class=\"btn btn-block btn-warning\" [routerLink] = \"['/newsfeed', channel.id]\">{{channel.name}}</h1>\n                </div>\n              </div>\n            </div>\n          </div>\n      </div>\n  </div>\n  <br/>\n  <br/>"
 
 /***/ }),
 

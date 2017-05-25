@@ -26,7 +26,7 @@
             <div *ngFor = "let channel of newsJson.sources">
               <div class="col-md-3">
                 <div class="well channel"> 
-                  <img class="channel-thumb img-thumbnail btn" src="{{channel.urlsToLogos.small}}" [routerLink] = "['/newsfeed', channel.id]"/>
+                  <h1 class="btn btn-block btn-warning" [routerLink] = "['/newsfeed', channel.id]">{{channel.name}}</h1>
                 </div>
               </div>
             </div>
