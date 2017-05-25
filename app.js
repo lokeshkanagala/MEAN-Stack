@@ -5,6 +5,13 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const passport = require('passport');
 const config = require('./config/database');
+let io = require('socket.io');
+const http = require('http');
+const app = express();
+const server = http.createServer(app);
+io = io.listen(server);
+const users = [];
+const connections = [];
 
 //Connect to database
 mongoose.connect(config.database);
@@ -21,9 +28,7 @@ mongoose.connection.on("err", (err) => {
 
 const port = 3000;
 
-const app = express();
-
-const users = require('./routes/users');
+const user = require('./routes/users');
 
 //CORS Middleware
 app.use(cors());
@@ -42,7 +47,7 @@ app.use(passport.session());
 require('./config/passport')(passport);
 
 //for all user routes
-app.use('/users', users);
+app.use('/users', user);
 
 //Index Route
 app.get('/', (req, res) => {
@@ -53,7 +58,37 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
+io.on('connection', function(socket) {
+    connections.push(socket);
+    console.log('Connected: ' + connections.length);
+
+    // Deleting Disconnected Users
+    socket.on('disconnect', (data) => {
+        users.splice(users.indexOf(socket.username), 1);
+        updateUsername();
+        connections.splice(connections.indexOf(socket), 1);
+    });
+
+    // Send Message
+    socket.on('message', function(data){
+        io.emit('message', {msg: data, user: socket.username});
+    });
+
+    // Adding New User
+    socket.on('newUser', (data) => {
+        socket.username = data;
+        if(users.indexOf(socket.username) == -1) {
+            users.push(socket.username);
+        }
+        updateUsername();
+    });
+
+    function updateUsername() {
+        io.sockets.emit('getUsers', users);
+    }
+});
+
 //Start Server
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+server.listen(process.env.PORT || port, () => {
+    console.log("Server Starting on port " + port +"/"+process.env.PORT);
 });

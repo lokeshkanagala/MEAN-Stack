@@ -1,105 +1,6 @@
 webpackJsonp([2,4],{
 
-/***/ 392:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(673);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(712)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!./../node_modules/css-loader/index.js?{\"sourceMap\":false}!./../node_modules/postcss-loader/index.js!./styles.css", function() {
-			var newContent = require("!!./../node_modules/css-loader/index.js?{\"sourceMap\":false}!./../node_modules/postcss-loader/index.js!./styles.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 673:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(674)();
-// imports
-
-
-// module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 674:
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function() {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		var result = [];
-		for(var i = 0; i < this.length; i++) {
-			var item = this[i];
-			if(item[2]) {
-				result.push("@media " + item[2] + "{" + item[1] + "}");
-			} else {
-				result.push(item[1]);
-			}
-		}
-		return result.join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-
-/***/ }),
-
-/***/ 712:
+/***/ 1114:
 /***/ (function(module, exports) {
 
 /*
@@ -352,13 +253,112 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 716:
+/***/ 1122:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(392);
+module.exports = __webpack_require__(531);
+
+
+/***/ }),
+
+/***/ 531:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(821);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(1114)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../node_modules/css-loader/index.js?{\"sourceMap\":false}!./../node_modules/postcss-loader/index.js!./styles.css", function() {
+			var newContent = require("!!./../node_modules/css-loader/index.js?{\"sourceMap\":false}!./../node_modules/postcss-loader/index.js!./styles.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 821:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(822)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.news-channel .well {\n  margin-bottom: 5px;\n  overflow: auto;\n  min-height: 200px;\n}\n\n.container .well {\n  margin-bottom: 5px;\n  overflow: auto;\n  min-height: 100px;\n}\n\nh1 {\n  color: #369;\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 250%;\n}\n\n#row-description {\n  font-style: italic;\n}\n\n\n\n.news-title {\n  text-align: left;\n  text-transform: uppercase;\n  text-decoration: underline;\n}\n\n\n.channel {\n  text-align: center;\n  background: #ffffff;\n  padding: 5px 10px;\n}\n\n.news-thumb {\n  vertical-align: middle;\n  margin-top: 25px;\n}\n\n.channel-thumb {\n  max-height: 100%;  \n  max-width: 100%; \n  width: auto;\n  height: auto;\n  position: absolute;  \n  top: 0;  \n  bottom: 0;  \n  left: 0;  \n  right: 0;  \n  margin: auto;\n}\n\n.btn-warning {\n  height: 100px;\n  font-weight: bold;\n}\n\n.channel .h1 {\n  margin-top: 10px;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 822:
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function() {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		var result = [];
+		for(var i = 0; i < this.length; i++) {
+			var item = this[i];
+			if(item[2]) {
+				result.push("@media " + item[2] + "{" + item[1] + "}");
+			} else {
+				result.push(item[1]);
+			}
+		}
+		return result.join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
 
 
 /***/ })
 
-},[716]);
+},[1122]);
 //# sourceMappingURL=styles.bundle.map

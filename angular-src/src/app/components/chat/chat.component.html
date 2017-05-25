@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 olusers well">
+      <h3 class="user-heading">Users in ChatRoom</h3>
+      <div class="user-names" *ngFor = "let user of olUsers">
+        👉 {{user}}
+      </div>
+    </div>
+    <div class = "col-md-9 chatbox">
+      <div class="msgbox">
+        <div *ngFor = "let msg of chatmsg">
+          <h4><strong>{{msg.user}}: </strong><span class="msg-tag">{{msg.msg}}</span></h4>
+        </div>
+      </div>
+      <hr/>
+      <div class="msgbutton">
+        <div class="form-group" (keyup.enter) = "send(chatip)">
+          <label for="inputlg">Enter Message:</label>
+          <input class="form-control input-lg" [(ngModel)] = "chatip" type="text" placeholder="Hit Enter to Send Message"><br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

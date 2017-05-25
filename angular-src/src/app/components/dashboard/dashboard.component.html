@@ -1,2 +1,37 @@
-<h2 class="page-header">Dashboard</h2>
-<p>Welcome to your Dashboard</p>
+<h1 class="page-header" style="text-align: center; font-size: 50px;"><strong>Dashboard</strong></h1>
+<h4 style="text-align: center;">Select the 📰  Channel to Proceed ⏩</h4>
+<hr/>
+  <div class="row">
+    <div class="col-md-3">
+      <a class="btn btn-danger btn-block" (click)="loadNews('business')">Business</a>
+      <a class="btn btn-danger btn-block" (click)="loadNews('entertainment')">Entertainment</a>
+    </div>
+    <div class="col-md-3">
+      <a class="btn btn-danger btn-block" (click)="loadNews('gaming')">Gaming</a>
+      <a class="btn btn-danger btn-block" (click)="loadNews('general')">General</a>
+    </div>
+    <div class="col-md-3">
+      <a class="btn btn-danger btn-block" (click)="loadNews('music')">Music</a>
+      <a class="btn btn-danger btn-block" (click)="loadNews('sport')">Sport</a>
+    </div>
+    <div class="col-md-3">
+      <a class="btn btn-danger btn-block" (click)="loadNews('technology')">Technology</a>
+      <a class="btn btn-danger btn-block" (click)="loadNews('science-and-nature')">Science</a>
+    </div>
+  </div>
+  <hr/>
+  <div class="news-channel">
+      <div class="row">
+          <div *ngIf = "newsJson">
+            <div *ngFor = "let channel of newsJson.sources">
+              <div class="col-md-3">
+                <div class="well channel"> 
+                  <h1 class="btn btn-block btn-warning" [routerLink] = "['/newsfeed', channel.id]">{{channel.name}}</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <br/>
+  <br/>

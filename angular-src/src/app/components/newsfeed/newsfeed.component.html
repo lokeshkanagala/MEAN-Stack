@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf = "newsFeeds">
+      <div *ngFor = "let news of newsFeeds.articles">
+      <div class="well">
+        <div class="col-md-2">
+          <img class="img-thumbnail news-thumb" src="{{news.urlToImage}}"/>
+        </div>
+        <div class="col-md-10">
+          <div class="news"> 
+            <a href="{{news.url}}" target="_blank"><h5 class="news-title">{{news.title}}</h5></a>
+            <div class="row">
+              <div class="col-md-5" style="float: left;">
+                <p><strong>Author: </strong>{{news.author}}</p>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-4 right-float">
+                <p><strong>Published at: </strong>{{news.publishedAt | date: 'medium'}}</p>
+              </div>
+            </div>
+            <div class="row" id="row-description">
+              <div class="col-md-12">{{news.description}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

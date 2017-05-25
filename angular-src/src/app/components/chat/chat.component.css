@@ -1,0 +1,24 @@
+.msgbox {
+    height: 400px;
+    margin: 10px;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+.well {
+    height: 530px;
+}
+
+.user-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.user-names {
+    font-size: 20px;
+}
+
+.msg-tag {
+    font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
+}

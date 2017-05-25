@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, Response } from '@angular/http';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { tokenNotExpired } from 'angular2-jwt';
 import 'rxjs/add/operator/map';
@@ -8,6 +8,7 @@ import 'rxjs/add/operator/map';
 export class AuthService {
   authToken: any;
   user: any;
+  port = "http://localhost:3000";
 
   constructor(private http: Http,
               private localStorage: LocalStorageService) { }
@@ -15,14 +16,15 @@ export class AuthService {
   registerUser(user) {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/users/register', user, {headers})
+    return this.http.post('/users/register', user, {headers})
       .map(res => res.json());
   }
 
   authenticateUser(user) {
+    console.log('authenticate func');
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/users/authenticate', user, {headers})
+    return this.http.post('/users/authenticate', user, {headers})
       .map(res => res.json());
       //returns json with success and token and also user info
   }
@@ -39,7 +41,7 @@ export class AuthService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get('http://localhost:3000/users/profile', {headers}).map(res => res.json());
+    return this.http.get('/users/profile', {headers}).map(res => res.json());
   }
 
   loadToken() {

@@ -1,23 +1,28 @@
 <div class="jumbotron text-center">
-  <h1>MEAN App</h1>
-  <p class="lead">Welcome to MEAN App. App built using Angular 2 on the front end and Node.js, JWT, Express on the back end</p>
+  <h1>NewsFirst - A MEAN Stack App</h1>
+  <p class="lead">Welcome to NewsFirst Mean Stack App. App built using Angular 2 on the front end and Node.js, JWT, Express on the back end</p>
   <div>
-    <a class="btn btn-success" [routerLink] = "['/register']">Register</a>
-    <a class="btn btn-success" [routerLink] = "['/login']">Login</a>
+    <a *ngIf="!authService.loggedIn()" class="btn btn-success" [routerLink] = "['/register']">Register</a>
+    <a *ngIf="!authService.loggedIn()" class="btn btn-success" [routerLink] = "['/login']">Login</a>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-3">
     <h3>Express Backend</h3>
     <p>Node.js/Express server is used with Mongoose to organize model and query the Database</p>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     <h3>Angular-CLI</h3>
     <p>Angular-CLI lets you easily get the angular 2 structure to kick-start your angular 2 application</p>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     <h3>JWT Tokens</h3>
     <p>Fully featured authentication using JSON web tokens. Login and stores user data through given expire time</p>
   </div>
+  <div class="col-md-3">
+    <h3>mLab</h3>
+    <p>Real-Time NoSQL is hosted on mLab which is very accessible tool and easy to configure</p>
+  </div>
 </div>
+
